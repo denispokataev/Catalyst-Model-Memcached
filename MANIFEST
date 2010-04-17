@@ -1,7 +1,5 @@
 MANIFEST
-README
 LICENSE
-Todo
 Changes
 Makefile.PL
 lib/Catalyst/Model/Memcached.pm

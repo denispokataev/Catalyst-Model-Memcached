@@ -2,13 +2,14 @@ package Catalyst::Model::Memcached;
 
 use strict;
 use warnings;
+use 5.0100;
 
 use Moose;
 
 BEGIN { extends 'Catalyst::Model' };
 use Cache::Memcached::Fast;
 
-use version; our $VERSION = qv('0.01');
+use version; our $VERSION = qv('0.02');
 
 my $primary_key;
 my $ttl;
@@ -139,6 +140,8 @@ Catalyst::Model::Memcached - Wrapper for memcached imitating Catalyst models
 Simple Model for Catalyst for storing data in memcached
 
 =head1 USAGE
+
+B<Warning> Module requires perl >= 5.10 and Catalyst >= 5.8 !
 
 One subclass of model handle one set of primary_key and ttl params. 
 You can think of it as one table in regular DB. 
